@@ -40,31 +40,23 @@
         }
 
         .logo {
-            width: 100px;
-            margin-bottom: -18px;
-            justify-self: center;
             display: none;
-        }
-
-        .title {
-            font-size: var(--lg);
-            margin-bottom: 12px;
-            text-align: center;
-        }
-
-        .subtitle {
-            color: var(--very-light-pink);
-            font-size: var(--md);
-            font-weight: 300;
-            margin-top: 0;
-            margin-bottom: 30px;
-            text-align: center;
+            justify-self: center;
+            width: 100px;
+            margin-bottom: 18px;
         }
 
         .form {
             display: flex;
             flex-direction: column;
-            margin-bottom: 12px;
+        }
+
+        .form a {
+            text-align: center;
+            margin-bottom: 52px;
+            font-size: var(--sm);
+            color: var(--palo-rosa);
+            text-decoration: none;
         }
 
         .label {
@@ -83,6 +75,10 @@
             margin-bottom: 12px;
         }
 
+        .input-email {
+            margin-bottom: 22px;
+        }
+
         .primary-button { 
             background-color: var(--palo-rosa);
             border-radius: 8px;
@@ -95,13 +91,30 @@
             height: 50px;
         }
 
+        .secundary-button {
+            width: 100%;
+            height: 50px;
+            bottom: 10px;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            color: var(--palo-rosa);
+            background-color: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--palo-rosa);
+        }
+
         .login-button {
             margin-top: 14px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         @media (max-width: 640px) {
             .logo {
                 display: block;
+            }
+
+            .form {
+                margin-bottom: 56px;
             }
         }
 
@@ -112,18 +125,19 @@
         <div class="form-container">
             <img src="https://i.postimg.cc/Kj9Kdh3L/LOGO-DULCECAT-Mesa-de-trabajo-1.png" alt="logo" class="logo">
 
-            <h1 class="title">Create a new password</h1>
-            <p class="subtitle">Enter a new password for you account</p>
-
             <form action="/" class="form">
+                <label for="email" class="label">Email address </label>
+                <input type="text" id="email" placeholder="camilayokoo@example.com" class="input input-email">
+
                 <label for="password" class="label">Password </label>
                 <input type="password" id="password" placeholder="*********" class="input input-password">
 
-                <label for="new-password" class="label">Re-enter Password </label>
-                <input type="new-password" id="new-password" placeholder="*********" class="input input-password">
+                <input type="submit" value="Log in" class="primary-button login-button">
 
-                <input type="submit" value="Confirm" class="primary-button login-button">
+                <a href="/">Forgot my password</a>
             </form>
+
+            <button class="secundary-button signup-buttom">Sign up</button>
 
         </div>
     </div>
