@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        :root {
+            --white: #ffffff ;
+            --black: #000000; 
+            --very-light-pink: #96b5b0;
+            --text-input-field: #f7f7f7;
+            --palo-rosa: #fa9c80;
+            --sm: 14px;
+            --md:16px;
+            --lg:18px
+        } 
+
+        body { 
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .menu {
+            display: none;
+        }
+        .logo {
+            width: 100px;
+        }
+        .navbar-left ul,
+        .navbar-right ul {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .navbar-left,
+        .navbar-right {
+            display: flex;
+        }
+        .navbar-right {
+            align-items: center;
+        }
+        .navbar-left ul {
+            margin-left: 12px;
+            font-size: var(--lg);
+        }
+        .navbar-right ul {
+            height: 60px;
+        }
+        .navbar-left ul li a,
+        .navbar-right ul li a {
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid var(--white);
+            color: var(--very-light-pink);
+            text-decoration: none;
+        }
+        .navbar-left ul li a:hover,
+        .navbar-right ul li a:hover {
+            border: 1px solid var(--palo-rosa);
+            color: var(--palo-rosa);
+        }
+        .navbar-email {
+            margin-right: 12px;
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+        .navbar-shopping-card {
+             position: relative;
+        }
+        .navbar-shopping-card div {
+            display: flex;
+            position: absolute;
+            top: -6px;
+            right: -3px;
+            justify-content: center;
+            align-items: center;
+            width: 13px;
+            height: 13px;
+            font-size: var(--sm);
+            font-weight: bold;
+            background-color: var(--palo-rosa);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 640px) {
+            .menu {
+                display: block;
+            }
+            .navbar-left ul {
+                display: none;
+            }
+            .navbar-email {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+        
+        <div class="navbar-left">
+            <img src="https://i.postimg.cc/Kj9Kdh3L/LOGO-DULCECAT-Mesa-de-trabajo-1.png" alt="logo" class="logo">
+
+            <ul>
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Portallaves</a>
+                </li>
+                <li>
+                    <a href="/">Relojes</a>
+                </li>
+                <li>
+                    <a href="/">Portavasos</a>
+                </li>
+                <li>
+                    <a href="/">Retratos</a>
+                </li>
+                <li>
+                    <a href="/">Others</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-email">camilayokoo@gmail.com</li>
+                <li class="navbar-shopping-card">
+                    <img src="./icons/icon_shopping_cart.svg" alt="Shopping car">
+                    <div>2</div>
+                </li>                
+            </ul>
+
+        </div>
+    </nav>
+</body>
+</html>
