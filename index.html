@@ -2,36 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Esto sirve para agregar esa pequeña descripcion que aparece en el buscador">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Estos links son los links de las fonts que se eligio en diseño-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     
-    <title>Document</title>
-    <style>
-        /*Desclaramos estas variables por si el area de diseño cambia los colores sea mas facil hacer los cambios*/
+    <link rel="stylesheet" href="./styles.css">
+    
+    <title>Dulce Cat</title>
 
-        /* : root Selecciona el elemento raíz del documento: <html> en el caso de HTML (util para declarar variables CSS globales) */
-        
-        :root {
-            --white: #ffffff ;
-            --black: #000000; 
-            --very-light-pink: #c7c7c7;
-            --text-input-field: #f7f7f7;
-            --palo-rosa: #fa9c80;
-            
-        }
-        body {
-            font-family: 'Quicksand', sans-serif;
-        }
-    </style>
 </head>
 <body>
-    
+    <nav>
+        <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+        
+        <div class="navbar-left">
+            <img src="https://i.postimg.cc/Kj9Kdh3L/LOGO-DULCECAT-Mesa-de-trabajo-1.png" alt="logo" class="logo">
+
+            <ul>
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Portallaves</a>
+                </li>
+                <li>
+                    <a href="/">Relojes</a>
+                </li>
+                <li>
+                    <a href="/">Portavasos</a>
+                </li>
+                <li>
+                    <a href="/">Retratos</a>
+                </li>
+                <li>
+                    <a href="/">Others</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-email">camilayokoo@gmail.com</li>
+                <li class="navbar-shopping-card">
+                    <img src="./icons/icon_shopping_cart.svg" alt="Shopping car">
+                    <div>2</div>
+                </li>                
+            </ul>
+        </div>
+        
+        <div class="desktop-menu inactive">
+            <ul>
+                <li>
+                    <a href="/" class="title">My orders</a>
+                </li>
+                <li>
+                    <a href="/" >My account</a>
+                </li>
+                <li>
+                    <a href="/">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="./main.js"></script>
 </body>
 </html>
