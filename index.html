@@ -112,7 +112,7 @@
         </div>
     </nav>
 
-    <aside class="product-detail inactive">
+    <aside id="shoppingCarContainer" class="inactive">
         <div class="title-container">
             <img src="./icons/flechita.svg" alt="Arrow">
             <p class="title">My order</p>
@@ -165,27 +165,32 @@
 
     </aside>
 
+    <aside id="product-detail" class="inactive" >
+        <div class="product-detail-close">
+            <img src="./icons/icon_close.png" alt=""> 
+        </div>
+
+        <img src="https://i.postimg.cc/QMxh3Xvg/IMG-20201217-144234.jpg" alt="" class="product-img">
+
+        <div class="productDetail-info">
+            <p>$35,00</p>
+            <p>Reloj de escritorio</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam accusamus maxime dolorum incidunt quisquam voluptatum eligendi expedita, omnis, suscipit possimus unde earum qui.</p>
+            <button class="primary-button add-to-cart-button">
+                <img src="./icons/bt_add_to_cart.svg" alt="add to card">
+                Add to cart
+
+            </button>
+        </div>
+    </aside>
+
     <section class="main-container">
         <div class="cards-container">
-
-       <!-- <div class="product-card">
-                <img src="https://i.postimg.cc/QMxh3Xvg/IMG-20201217-144234.jpg" alt="" class="product-img">
-                <div class="product-info">
-                    <div>
-                        <p>$120,00</p> 
-                        <p>Reloj de mesa</p>                         
-                    </div>
-                    <figure>
-                        <img src="./icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-                </div>
-            </div> -->
-
-
-
+            <!-- Los productos los integramos al HTML con js -->
         </div>
     </section>
 
     <script src="./main.js"></script>
+
 </body>
 </html>
