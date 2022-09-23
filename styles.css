@@ -28,6 +28,7 @@ nav {
 }
 .menu {
     display: none;
+    cursor: pointer;
 }
 .logo {
     width: 70px; 
@@ -79,6 +80,7 @@ nav {
 }
 .navbar-shopping-card {
      position: relative;
+     cursor: pointer;
 }
 .navbar-shopping-card div {
     display: flex;
@@ -145,8 +147,9 @@ nav {
 
 .mobile-menu {
     position: absolute;
-    top: 40px;
+    top: 70px;
     padding: 24px;
+    background-color: var(--white);
 }
 .mobile-menu a {
     text-decoration: none;
@@ -167,8 +170,6 @@ nav {
 .mobile-menu ul li {
     margin-bottom: 24px;
 }
-
-
 .mobile-menu .email {
     font-size: var(--sm);
     font-weight: 300;
@@ -176,6 +177,85 @@ nav {
 .mobile-menu .sign-out {
     font-size: var(--sm);
     color: var(--palo-rosa);
+}
+
+/* Shopping Car (product detail y car) */
+
+.product-detail {
+    position: absolute;
+    right: 0;
+    width: 360px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+.title-container {
+    display: flex;
+}
+.title-container img {
+    margin-right: 14px;
+    transform: rotate(180deg);
+}
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 0 24px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    background: var(--text-input-field);
+}
+.order p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+.order p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+}
+.order p span:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.shopping-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    margin-bottom: 24px;
+    align-items: center;
+    gap: 16px;
+}
+.shopping-card figure {
+    margin: 0;
+}
+.shopping-card figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.shopping-card p:nth-child(2) {
+    color: var(--very-light-pink);
+}
+.shopping-card p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+.primary-button { 
+    background-color: var(--palo-rosa);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
 }
 
 
@@ -189,7 +269,9 @@ nav {
     .navbar-email, .desktop-menu {
         display: none;
     }
-
+    .product-detail {
+        width: 100%;
+    }
 }
 
 @media (min-width: 641px) {
